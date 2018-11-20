@@ -1,0 +1,28 @@
+{
+  "name": "django-rasa-sockets",
+  "version": "1.0.0",
+  "description": "using socket.io to communicate with rasa socket.io setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexmhack/Django-Rasa-Sockets.git"
+  },
+  "keywords": [
+    "socket.io",
+    "django",
+    "rasa",
+    "chatbot"
+  ],
+  "author": "alexmhack",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexmhack/Django-Rasa-Sockets/issues"
+  },
+  "homepage": "https://github.com/Alexmhack/Django-Rasa-Sockets#readme",
+  "dependencies": {
+    "socket.io": "^2.1.1"
+  }
+}

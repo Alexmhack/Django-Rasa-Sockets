@@ -3,24 +3,27 @@
     "action_listen": {
       "slots": []
     },
-    "utter_goodbye": {
+    "utter_happy": {
       "slots": []
     },
-    "utter_happy": {
+    "utter_goodbye": {
       "slots": []
     }
   },
-  "rasa_core": "0.11.8",
+  "rasa_core": "0.12.1",
   "python": "3.6.5",
   "max_histories": [
+    5,
     null,
-    3,
-    3
+    5,
+    2
   ],
   "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble",
   "policy_names": [
+    "rasa_core.policies.keras_policy.KerasPolicy",
     "rasa_core.policies.fallback.FallbackPolicy",
     "rasa_core.policies.memoization.MemoizationPolicy",
-    "rasa_core.policies.keras_policy.KerasPolicy"
-  ]
+    "rasa_core.policies.form_policy.FormPolicy"
+  ],
+  "trained_at": "20181120-182122"
 }

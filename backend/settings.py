@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +124,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+
+# whitelisted origins
+CORS_ORIGIN_WHITELIST = (
+    'localhost:5500',
+)

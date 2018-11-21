@@ -15,6 +15,7 @@ $(document).ready(function() {
 										'<div class="bounce3"></div>'+
 									'</div>'+
 									'<input type="text" id="chat-input" autocomplete="off" placeholder="Try typing here"'+ 'class="form-control bot-txt"/>'+
+									'<button id=\'send\'>send</button>' + 
 								'</div>'+
 							'</div><!--chatCont end-->'+
 
@@ -47,17 +48,6 @@ $(document).ready(function() {
 		$('.chatCont').toggle();
 		$('.bot_profile').toggle();
 		$('.chatForm').toggle();
-	});
-
-	$("#chat-input").keypress(function (e) {
-	    if ((e.which && e.which == 13) || (e.keyCode && e.keyCode == 13)) {
-			var chatInput = $("#chat-input").val();
-			$("#result_div").append("<strong>USERMESSAGE:</strong> " + chatInput + "<br>")
-			$("#chat-input").val('')
-	        return false;
-	    } else {
-	        return true;
-	    }
 	});
 
 });

@@ -6,6 +6,12 @@ name = "pypi"
 [packages]
 django = "*"
 django-cors-headers = "*"
+gunicorn = "*"
+django-heroku = "*"
+whitenoise = "*"
+rasa_core = "*"
+rasa_nlu = "*"
+rasa_core_sdk = "*"
 
 [dev-packages]
 

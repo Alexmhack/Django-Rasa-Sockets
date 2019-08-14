@@ -154,6 +154,7 @@ function fromByteArray (uint8) {
 },{}],2:[function(require,module,exports){
 
 },{}],3:[function(require,module,exports){
+(function (Buffer){
 /*!
  * The buffer module from node.js, for the browser.
  *
@@ -1932,7 +1933,8 @@ function numberIsNaN (obj) {
   return obj !== obj // eslint-disable-line no-self-compare
 }
 
-},{"base64-js":1,"ieee754":4}],4:[function(require,module,exports){
+}).call(this,require("buffer").Buffer)
+},{"base64-js":1,"buffer":3,"ieee754":4}],4:[function(require,module,exports){
 exports.read = function (buffer, offset, isLE, mLen, nBytes) {
   var e, m
   var eLen = (nBytes * 8) - mLen - 1
@@ -8424,7 +8426,11 @@ yeast.decode = decode;
 module.exports = yeast;
 
 },{}],45:[function(require,module,exports){
-var socket = require('socket.io-client')('http://localhost:5500');
+var socket = require('socket.io-client')('http://localhost:5500',
+	{
+		origins: '*:*',
+		transport : ['websocket']
+	});
 
 $(document).ready(function() {
 

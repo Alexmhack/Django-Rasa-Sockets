@@ -1,9 +1,8 @@
 from rasa_core.agent import Agent
 from rasa_core.channels.socketio import SocketIOInput
-from rasa_core.agent import Agent
 
 # load your trained agent
-agent = Agent.load('rasachat/models/dialogue', interpreter='rasachat/models/current/nlu')
+agent = Agent.load('./models/dialogue', interpreter='./models/current/nlu')
 
 input_channel = SocketIOInput(
 	# event name for messages sent from the user

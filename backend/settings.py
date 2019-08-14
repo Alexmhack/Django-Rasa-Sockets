@@ -137,7 +137,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # whitelisted origins
 CORS_ORIGIN_WHITELIST = (
-    'localhost:5500',
+    'http://localhost:5500',
 )
 
 CORS_ALLOW_CREDENTIALS = True

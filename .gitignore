@@ -102,3 +102,9 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# npm dependencies
+node_modules/
+
+# virtualenv folder
+rasa_env/

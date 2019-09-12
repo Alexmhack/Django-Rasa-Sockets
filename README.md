@@ -1,3 +1,5 @@
+**NOTE: Currently not working. This repo is currently under development, open issue for any question.**
+
 # Django-Rasa-Sockets
 Rasa Chatbot using Django backend and Sockets for communication
 
@@ -26,7 +28,7 @@ Rasa Chatbot using Django backend and Sockets for communication
 	npm install -g browserify
 	```
 
-5. Now in **static/js** folder, create two files, one for backend javascript code and 	
+5. Now in **static/js** folder, create two files, one for backend javascript code and
 	another for frontend which will be created by browserify
 
 	```
@@ -34,7 +36,7 @@ Rasa Chatbot using Django backend and Sockets for communication
 	bundle.js 	-> frontend compiled by browserify
 	```
 
-6. When you have your backend javascript code ready with socket.io setup run browserify 
+6. When you have your backend javascript code ready with socket.io setup run browserify
 	command to compile file for frontend
 
 	```
@@ -42,7 +44,7 @@ Rasa Chatbot using Django backend and Sockets for communication
 	browserify chat.js -o bundle.js
 	```
 
-7. In **templates/index.html** file load static and add script tag for browserify 
+7. In **templates/index.html** file load static and add script tag for browserify
 	compiled ```bundle.js``` file
 
 	```
@@ -72,5 +74,5 @@ git clone https://github.com/Alexmhack/Django-Rasa-Sockets
 Replace the **rasachat** folder with your rasa core chatbot and follow the **
 8th step**
 
-Locate to [127.0.0.1:8000/](http://127.0.0.1:8000/) and click on button at 
+Locate to [127.0.0.1:8000/](http://127.0.0.1:8000/) and click on button at
 bottom right and enter ```hey``` in the input.

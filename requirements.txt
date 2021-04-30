@@ -105,7 +105,7 @@ twilio==6.29.3
 Twisted==19.7.0
 typing==3.7.4
 tzlocal==2.0.0
-urllib3==1.25.3
+urllib3==1.25.8
 wcwidth==0.1.7
 webexteamssdk==1.1.1
 websocket-client==0.54.0

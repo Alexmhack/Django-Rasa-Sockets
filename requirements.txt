@@ -102,7 +102,7 @@ termcolor==1.1.0
 terminaltables==3.1.0
 tqdm==4.33.0
 twilio==6.29.3
-Twisted==19.7.0
+Twisted==22.4.0
 typing==3.7.4
 tzlocal==2.0.0
 urllib3==1.25.3

@@ -60,7 +60,7 @@ numpy==1.17.0
 packaging==18.0
 pika==0.12.0
 prompt-toolkit==2.0.9
-protobuf==3.9.1
+protobuf==3.18.3
 pycparser==2.19
 pydot==1.4.1
 PyHamcrest==1.9.0
